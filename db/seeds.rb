@@ -18,4 +18,4 @@ Recipe.create(name: "BLT")
 Recipe.create(name: "PB&J")
 Recipe.create(name: "Bacon, Egg & Cheese")
 
-Ingredient.create(name: "Bacon", recipe_id)
+Ingredient.create(name: "Bacon")
