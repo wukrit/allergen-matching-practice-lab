@@ -1,5 +1,5 @@
 class AllergiesController < ApplicationController
-  before_action :set_allergy, only [:show, :edit, :update, :destroy]
+  before_action :set_allergy, only: [:show, :edit, :update, :destroy]
 
 
   def index
