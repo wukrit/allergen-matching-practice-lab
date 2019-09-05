@@ -10,19 +10,38 @@ Allergy.destroy_all
 Ingredient.destroy_all
 Recipe.destroy_all
 
-User.create(name: "Sukrit")
-User.create(name: "Kenny")
-User.create(name: "Matt")
+sukrit = User.create(name: "Sukrit")
+kenny = User.create(name: "Kenny")
+matt = User.create(name: "Matt")
 
-Recipe.create(name: "BLT")
-Recipe.create(name: "PB&J")
-Recipe.create(name: "Bacon, Egg & Cheese")
+blt = Recipe.create(name: "BLT")
+pbj =  Recipe.create(name: "PB&J")
+bec = Recipe.create(name: "Bacon, Egg & Cheese")
 
-Ingredient.create(name: "Bacon")
-Ingredient.create(name: "Lettuce")
-Ingredient.create(name: "Tomato")
-Ingredient.create(name: "Peanut Butter")
-Ingredient.create(name: "Jelly")
-Ingredient.create(name: "Bread")
-Ingredient.create(name: "Egg")
-Ingredient.create(name: "Cheese")
+bacon = Ingredient.create(name: "Bacon")
+lettuce = Ingredient.create(name: "Lettuce")
+tomato = Ingredient.create(name: "Tomato")
+pb = Ingredient.create(name: "Peanut Butter")
+jelly = Ingredient.create(name: "Jelly")
+bread = Ingredient.create(name: "Bread")
+egg = Ingredient.create(name: "Egg")
+cheese = Ingredient.create(name: "Cheese")
+
+sukrit.ingredients << pb
+matt.ingredients << egg
+kenny.ingredients << cheese
+kenny.ingredients << bacon
+
+blt.ingredients << bacon
+blt.ingredients << lettuce
+blt.ingredients << tomato
+blt.ingredients << bread
+
+pbj.ingredients << pb
+pbj.ingredients << jelly
+pbj.ingredients << bread
+
+bec.ingredients << bacon
+bec.ingredients << egg
+bec.ingredients << cheese
+bec.ingredients << bread
