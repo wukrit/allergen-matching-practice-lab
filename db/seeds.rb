@@ -13,3 +13,9 @@ Recipe.destroy_all
 User.create(name: "Sukrit")
 User.create(name: "Kenny")
 User.create(name: "Matt")
+
+Recipe.create(name: "BLT")
+Recipe.create(name: "PB&J")
+Recipe.create(name: "Bacon, Egg & Cheese")
+
+Ingredient.create(name: "Bacon", recipe_id)
